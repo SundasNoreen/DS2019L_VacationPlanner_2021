@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="team-boxed">
+   <div class="container">
+      <div class="intro">
+         {% if error %}
+         <h2 class="text-center">{{error}}</h2>
+         {% else %}
+         <h2 class="text-center">Top Sights!</h2>
+         <h6 class="text-center" style="color: black;margin-bottom: 20px;">The Data is Collected from Google and is last updated on 22 July 2021.</h6>
+         {% endif %}
+      </div>
+   </div>
+</section>
+<section class="projects-clean">
+   <div class="container">
+      <div class="row projects">
+         {% for city,picture,details in info %}
+         <div class="col-sm-6 col-lg-3 item">
+            <center>
+               <img class="img-fluid" src="{{picture}}">
+               <div class="values">
+                  <a style="text-decoration: none;font-size:18px; color: black" href="">{{city}}</a>
+                  <h6 style="text-decoration: none; margin-bottom: 5px; color: green" >{{details}}</h6>
+               </div>
+            </center>
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+{% endblock %}

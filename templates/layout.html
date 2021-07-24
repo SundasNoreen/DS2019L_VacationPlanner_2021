@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Vacation Planner</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="static/img/meeting.jpg" type="image/x-icon">
+      <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+      <link rel="stylesheet" href="static/fonts/ionicons.min.css">
+      <link rel="stylesheet" href="static/css/Footer-Basic.css">
+      <link rel="stylesheet" href="static/css/Navigation-Clean.css">
+      <link rel="stylesheet" href="static/css/Navigation-with-Button.css">
+      <link rel="stylesheet" href="static/css/styles.css">
+      <link rel="stylesheet" href="static/css/Team-Boxed.css">
+      <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/css/Map-Clean.css">
+      <link rel="stylesheet" href="static/css/Projects-Clean.css">
+      <link rel="stylesheet" href="static/css/styles.css">
+      <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/fonts/ionicons.min.css">
+      <link rel="stylesheet" href="static/css/Login-Form-Clean.css">
+      <link rel="stylesheet" href="static/css/Registration-Form-with-Photo.css">
+      <link rel="stylesheet" href="static/css/styles.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+         <div class="container">
+            <a class="navbar-brand" href="/home_page">VACATION PLANNER</a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="/home_page">Home</a></li>
+                  <li class="nav-item"><a class="nav-link"  href="/explore">Holiday Destinations</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/hotels">Hotels</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/plan_trip_home_page">Plan Trip</a></li>
+                  <li class="nav-item"><a class="nav-link"  href="/travel_costs">Travel Costs</a></li>
+                  <li class="nav-item dropdown">
+                     <a aria-expanded="false" data-bs-toggle="dropdown" class="dropdown-toggle nav-link" href="#">{{name}}</a>
+                     <div class="dropdown-menu"><a class="dropdown-item" href="/scheduled_trips">Scheduled Trips</a><a class="dropdown-item" href="/trips_history">Trips History</a><a class="dropdown-item" href="/profile">Profile</a><a class="dropdown-item" href="/logout">Logout</a></div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="img"></div>
+      {% block body %}
+      {% endblock %}
+      <footer class="footer-basic">
+         <ul class="list-inline">
+            <li class="list-inline-item"><a href="/services">Services</a></li>
+            <li class="list-inline-item"><a href="/about_us">About</a></li>
+            <li class="list-inline-item"><a href="/acknowledgements">Acknowledgements</a></li>
+         </ul>
+         <p class="copyright">Sundas Noreen © 2021</p>
+      </footer>
+      <script src="static/bootstrap/js/bootstrap.min.js"></script>
+   </body>
+</html>

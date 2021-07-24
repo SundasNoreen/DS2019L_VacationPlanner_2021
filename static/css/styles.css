@@ -1,0 +1,56 @@
+.projects-clean .item img {
+align:center;
+border:darkcyan solid 2px;
+width:300px;
+height:140px;
+background-size: 100% 100%;
+}
+    .values a{
+    font-size: 17px;
+    }
+    .values{
+    align:center;
+    width:261px;
+    height:150px;
+    }
+@media (max-width:767px)
+{
+.projects-clean .item img {
+align:center;
+border:darkcyan solid 1px;
+width:230px;
+height:100px;
+}
+    .values{
+    align:center;
+    width:230px;
+        height:auto;
+        margin-bottom: 10px;
+    }
+    .values a{
+    font-size: 16px;
+    }
+     .values h6{
+    font-size: 13px;
+    }
+     .values checked{
+         color:orange;
+     }
+}
+
+
+.team-boxed .table-responsive {
+margin-top:30px;
+margin-bottom:30px;
+border-top:1px solid;
+text-align:center;
+align:center;
+}
+@media (min-width:767px)
+{
+.team-boxed .table-responsive {
+margin-left:140px;
+margin-right:140px;
+font-size:18px;
+}
+}

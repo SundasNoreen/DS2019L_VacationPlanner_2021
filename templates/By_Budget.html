@@ -1,0 +1,233 @@
+<style>
+   .form-header h3
+   {
+   margin-top: 15px; text-align: center; margin-bottom: 15px;
+   }
+   .form-header label
+   {
+   margin-top: 15px; margin-bottom: 15px; text-align: center;
+   }
+   .category {
+   width:100%;
+   margin-bottom: 15px;
+   height: 30px;
+   }
+   .wrap{
+   width: 600px; margin: 0 auto; border: 3px solid grey; padding: 2rem; background:#F8F8FF;
+   }
+   @media only screen and (max-width: 767px) {
+   .wrap{
+   width:300px;
+   border: 2px solid grey;
+   padding: 1rem;}
+   }
+   .wrap p{
+   margin-top: 5px;
+   color: black;
+   text-align: center;
+   }
+</style>
+{% extends "layout.html" %}
+{% block body %}
+<section class="team-boxed">
+   <div class="container">
+      <div class="intro">
+         <h2 class="text-center">Plan Trip by Budget </h2>
+      </div>
+   </div>
+   <div class="form-header">
+      <form action = "" class="wrap"  method = "post">
+         <Label>Your Maximum Budget (PKR)</Label><br>
+         <select id="budget" class="category" name="budget" required>
+            <option value="2">10,000</option>
+            <option value="3">15,000</option>
+            <option value="4">20,000</option>
+            <option value="5">30,000</option>
+            <option value="6">40,000</option>
+            <option value="7">50,000</option>
+            <option value="8">Above 50,000</option>
+         </select>
+         <br>
+         <label>Starting Location</label><br>
+         <select name="location" class="category" id="starting" required>
+            <option value ='Abbottabad'>Abbottabad</option>
+            <option value ='Abdul Hakim'>Abdul Hakim</option>
+            <option value ='Aliabad'>Aliabad</option>
+            <option value ='Alpurai'>Alpurai</option>
+            <option value ='Athmuqam'>Athmuqam</option>
+            <option value ='Attock City'>Attock City</option>
+            <option value ='Awaran'>Awaran</option>
+            <option value ='Badin'>Badin</option>
+            <option value ='Bagh'>Bagh</option>
+            <option value ='Bahawalnagar'>Bahawalnagar</option>
+            <option value ='Bahawalpur'>Bahawalpur</option>
+            <option value ='Bannu'>Bannu</option>
+            <option value ='Barkhan'>Barkhan</option>
+            <option value ='Batgram'>Batgram</option>
+            <option value ='Bhakkar'>Bhakkar</option>
+            <option value ='Chakwal'>Chakwal</option>
+            <option value ='Chaman'>Chaman</option>
+            <option value ='Charsadda'>Charsadda</option>
+            <option value ='Chilas'>Chilas</option>
+            <option value ='Chiniot'>Chiniot</option>
+            <option value ='Chitral'>Chitral</option>
+            <option value ='Dadu'>Dadu</option>
+            <option value ='Daggar'>Daggar</option>
+            <option value ='Dainyor'>Dainyor</option>
+            <option value ='Dalbandin'>Dalbandin</option>
+            <option value ='Dasu'>Dasu</option>
+            <option value ='Dera Allahyar'>Dera Allahyar</option>
+            <option value ='Dera Bugti'>Dera Bugti</option>
+            <option value ='Dera Ghazi Khan'>Dera Ghazi Khan</option>
+            <option value ='Dera Ismail Khan'>Dera Ismail Khan</option>
+            <option value ='Dera Murad Jamali'>Dera Murad Jamali</option>
+            <option value ='Eidgah'>Eidgah</option>
+            <option value ='Faisalabad'>Faisalabad</option>
+            <option value ='Gakuch'>Gakuch</option>
+            <option value ='Gandava'>Gandava</option>
+            <option value ='Ghotki'>Ghotki</option>
+            <option value ='Gilgit'>Gilgit</option>
+            <option value ='Gojra'>Gojra</option>
+            <option value ='Gujranwala'>Gujranwala</option>
+            <option value ='Gujrat'>Gujrat</option>
+            <option value ='Gwadar'>Gwadar</option>
+            <option value ='Hafizabad'>Hafizabad</option>
+            <option value ='Hangu'>Hangu</option>
+            <option value ='Haripur'>Haripur</option>
+            <option value ='Harunabad'>Harunabad</option>
+            <option value ='Hasilpur'>Hasilpur</option>
+            <option value ='Hassan Abdal'>Hassan Abdal</option>
+            <option value ='Hujra Shah Muqim'>Hujra Shah Muqim</option>
+            <option value ='Hunza'>Hunza</option>
+            <option value ='Hyderabad '>Hyderabad </option>
+            <option value ='Islamabad'>Islamabad</option>
+            <option value ='Jacobabad'>Jacobabad</option>
+            <option value ='Jalalpur Jattan'>Jalalpur Jattan</option>
+            <option value ='Jamshoro'>Jamshoro</option>
+            <option value ='Jaranwala'>Jaranwala</option>
+            <option value ='Jhang '>Jhang </option>
+            <option value ='Jhelum'>Jhelum</option>
+            <option value ='Kabirwala'>Kabirwala</option>
+            <option value ='Kaghan'>Kaghan</option>
+            <option value ='Kalat'>Kalat</option>
+            <option value ='Kamalia'>Kamalia</option>
+            <option value ='Kandhkot'>Kandhkot</option>
+            <option value ='Karachi'>Karachi</option>
+            <option value ='Karak'>Karak</option>
+            <option value ='Kasur'>Kasur</option>
+            <option value ='Khairpur '>Khairpur </option>
+            <option value ='Khanewal'>Khanewal</option>
+            <option value ='Khanpur'>Khanpur</option>
+            <option value ='Kharan'>Kharan</option>
+            <option value ='Kharian'>Kharian</option>
+            <option value ='Khushab'>Khushab</option>
+            <option value ='Khuzdar'>Khuzdar</option>
+            <option value ='Khuzdar'>Khuzdar</option>
+            <option value ='Kohat'>Kohat</option>
+            <option value ='Kohlu'>Kohlu</option>
+            <option value ='Kot Addu'>Kot Addu</option>
+            <option value ='Kotli'>Kotli</option>
+            <option value ='Kulachi'>Kulachi</option>
+            <option value ='Kundian'>Kundian</option>
+            <option value ='Lahore'>Lahore</option>
+            <option value ='Lakki'>Lakki</option>
+            <option value ='Lala Musa'>Lala Musa</option>
+            <option value ='Larkana'>Larkana</option>
+            <option value ='Leiah'>Leiah</option>
+            <option value ='Lodhran'>Lodhran</option>
+            <option value ='Loralai'>Loralai</option>
+            <option value ='Malakand'>Malakand</option>
+            <option value ='Mandi Bahauddin'>Mandi Bahauddin</option>
+            <option value ='Mandi Burewala'>Mandi Burewala</option>
+            <option value ='Mansehra'>Mansehra</option>
+            <option value ='Mardan'>Mardan</option>
+            <option value ='Mastung'>Mastung</option>
+            <option value ='Matiari'>Matiari</option>
+            <option value ='Mian Channun'>Mian Channun</option>
+            <option value ='Mianwali'>Mianwali</option>
+            <option value ='Mingaora'>Mingaora</option>
+            <option value ='Mirpur '>Mirpur </option>
+            <option value ='Multan'>Multan</option>
+            <option value ='Muridke'>Muridke</option>
+            <option value ='Murree'>Murree</option>
+            <option value ='Musa Khel Bazar'>Musa Khel Bazar</option>
+            <option value ='Muzaffarabad'>Muzaffarabad</option>
+            <option value ='Muzaffargarh'>Muzaffargarh</option>
+            <option value ='Nankana Sahib'>Nankana Sahib</option>
+            <option value ='Naran'>Naran</option>
+            <option value ='Narowal'>Narowal</option>
+            <option value ='Nathiagali'>Nathiagali</option>
+            <option value ='Naushahro Firoz'>Naushahro Firoz</option>
+            <option value ='Nawabshah'>Nawabshah</option>
+            <option value ='Neelum Valley'>Neelum Valley</option>
+            <option value ='New Mirpur'>New Mirpur</option>
+            <option value ='Nowshera'>Nowshera</option>
+            <option value ='Okara'>Okara</option>
+            <option value ='Pakpattan'>Pakpattan</option>
+            <option value ='Panjgur'>Panjgur</option>
+            <option value ='Parachinar'>Parachinar</option>
+            <option value ='Pattoki'>Pattoki</option>
+            <option value ='Peshawar'>Peshawar</option>
+            <option value ='Pishin'>Pishin</option>
+            <option value ='Qila Saifullah'>Qila Saifullah</option>
+            <option value ='Quetta'>Quetta</option>
+            <option value ='Rahimyar Khan'>Rahimyar Khan</option>
+            <option value ='Rajanpur'>Rajanpur</option>
+            <option value ='Rawala Kot'>Rawala Kot</option>
+            <option value ='Rawalpindi'>Rawalpindi</option>
+            <option value ='Risalpur Cantonment'>Risalpur Cantonment</option>
+            <option value ='Saddiqabad'>Saddiqabad</option>
+            <option value ='Sahiwal'>Sahiwal</option>
+            <option value ='Saidu Sharif'>Saidu Sharif</option>
+            <option value ='Sanghar'>Sanghar</option>
+            <option value ='Sargodha'>Sargodha</option>
+            <option value ='Shahdad Kot'>Shahdad Kot</option>
+            <option value ='Shakargarh'>Shakargarh</option>
+            <option value ='Shekhupura'>Shekhupura</option>
+            <option value ='Shikarpur'>Shikarpur</option>
+            <option value ='Sialkot '>Sialkot </option>
+            <option value ='Sibi'>Sibi</option>
+            <option value ='Skardu'>Skardu</option>
+            <option value ='Sukkur'>Sukkur</option>
+            <option value ='Swabi'>Swabi</option>
+            <option value ='Swat'>Swat</option>
+            <option value ='Tando Allahyar'>Tando Allahyar</option>
+            <option value ='Tando Muhammad Khan'>Tando Muhammad Khan</option>
+            <option value ='Tank'>Tank</option>
+            <option value ='Thatta'>Thatta</option>
+            <option value ='Timargara'>Timargara</option>
+            <option value ='Toba Tek Singh'>Toba Tek Singh</option>
+            <option value ='Turbat'>Turbat</option>
+            <option value ='Umarkot'>Umarkot</option>
+            <option value ='Upper Dir'>Upper Dir</option>
+            <option value ='Uthal'>Uthal</option>
+            <option value ='Vihari'>Vihari</option>
+            <option value ='Zhob'>Zhob</option>
+            <option value ='Ziarat'>Ziarat</option>
+         </select>
+         <br>
+         <Label>Number of People</Label><br>
+         <select id="number" class="category" name="number" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 - 7</option>
+            <option value="6">8 - 10</option>
+            <option value="7">10 - 15</option>
+         </select>
+         <label>Check In Date</label><br>
+         <input type="date" class="category" name="checkin" min="{{d1}}" max="{{d2}}" required/><br>
+         <label>Check Out Date</label><br>
+         <input type="date" class="category" name="checkout" min="{{d1}}" max="{{d3}}" required/><br>
+         <button class="btn btn-primary d-block w-100" style="background-color: darkcyan; margin-bottom: 10px;" type="submit">Proceed to Results</button>
+         {% if error %}
+         <p class="error">
+            <strong>
+         <center> {{ error }}</center></strong>
+         {% endif %}
+      </form>
+   </div>
+</section>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+{% endblock %}

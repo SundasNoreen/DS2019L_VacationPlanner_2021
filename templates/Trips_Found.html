@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="team-boxed">
+   <div class="container">
+      <div class="intro">
+         <h2 class="text-center">Trip Details</h2>
+      </div>
+      <div class="table-responsive">
+         <table class="table ">
+            <tbody>
+               <tr>
+               </tr>
+               <tr>
+                  <td><strong>From</strong></td>
+                  <td>{{a}}</td>
+               </tr>
+               <tr>
+                  <td><strong>To</strong></td>
+                  <td>{{b}}</td>
+               </tr>
+               <tr>
+                  <td><strong>Starting Date</strong></td>
+                  <td>{{c}}</td>
+               </tr>
+               <tr>
+                  <td><strong>Ending Date</strong></td>
+                  <td>{{d}}</td>
+               </tr>
+                <tr>
+                  <td><strong>Number of Days</strong></td>
+                  <td>{{d}}</td>
+               </tr>
+               <tr>
+                  <td><strong>Number of People</strong></td>
+                  <td>{{e}}</td>
+               </tr>
+               <tr>
+                  <td><strong>Travel Cost</strong></td>
+                  <td>{{f}} (PKR)</td>
+               </tr>
+               <tr>
+                  <td><strong>Residence Cost</strong></td>
+                  <td>{{g}} (PKR)</td>
+               </tr>
+               <tr>
+                  <td><strong>Overall Vacation Cost</strong></td>
+                  <td>{{h}} (PKR)</td>
+               </tr>
+            </tbody>
+            <tbody>
+         </table>
+      </div>
+   </div>
+</section>
+{% endblock %}

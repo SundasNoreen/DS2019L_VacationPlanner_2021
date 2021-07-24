@@ -1,0 +1,86 @@
+<style>
+    .form-header h3
+    {
+        margin-top: 15px; text-align: center; margin-bottom: 15px;
+    }
+    .column {
+  float: left;
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .form-header label
+    {
+        margin-top: 15px; margin-bottom: 15px; text-align: center;
+    }
+    .category {
+        width:80%;
+        margin-bottom: 15px;
+        height: 30px;
+    }
+    .wrap{
+        width: 600px; margin: 0 auto; border: 3px solid grey; padding: 2rem; background:#F8F8FF;
+    }
+    @media only screen and (max-width: 767px) {
+        .wrap{
+            width:300px;
+            border: 2px solid grey;
+            padding: 1rem;}
+.category{
+    width:80%;
+}
+    .column {
+  float: left;
+  width: 100%;}}
+    .wrap p{
+        margin-top: 5px;
+        color: black;
+        text-align: center;
+    }
+</style>
+{% extends "layout.html" %}
+{% block body %}
+<section class="team-boxed">
+   <div class="container">
+      <div class="intro">
+         <h2 class="text-center">Save Trip</h2>
+      </div>
+   </div>
+    <div class="form-header">
+        <form action = "" class="wrap"  method = "post">
+<div class="row">
+    <div class="column">
+                 <div class="column">   <label>Vacation Destination</label><br>
+                <input type="text" name="location" id=location" class="category" value="{{a}}" disabled>
+                  <Label>Check In Date</Label><br>
+                    <input type="text" id="checkin" class="category" name="checkin" value="{{c}}" disabled>
+             <Label>Number of People</Label><br>
+                    <input type="number" id="number" class="category" name="number" value="{{e}}" disabled>
+                      <Label>Average Residence Cost (PKR)</Label><br>
+                    <input type="text" id="cost" class="category" name="cost" value="{{g}}" disabled>   </div>
+
+        <div class="column">
+               <label>Starting Location</label><br>
+                <input type="text" name="location" id="starting" class="category" value="{{b}}" disabled>
+
+            <Label>Check Out Date</Label><br>
+<input type="text" id="checkout" class="category" name="checkout" value="{{d}}" disabled>
+           <Label>Average Travel Cost (PKR)</Label><br>
+                    <input type="text" id="travel" class="category" name="travel" value="{{f}}" disabled>
+       <Label>Overall Vacation Cost (PKR)</Label><br>
+                    <input type="text" id="vacation" class="category" name="travel" value="{{h}}" disabled>
+                 </div>
+    </div>
+           <button class="btn btn-primary d-block w-100" style="background-color: darkcyan; margin-bottom: 10px;" type="submit">Save Trip</button>
+        {% if error %}
+            <p class="error"><strong><center> {{ error }}</center></strong>
+            {% endif %}</form>
+</div>
+</section>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+{% endblock %}

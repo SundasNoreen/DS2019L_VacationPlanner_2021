@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="team-boxed">
+   <div class="container">
+      <div class="intro">
+         <h2 class="text-center">We found {{trip}} Trips for you.</h2>
+      </div>
+      <div class="table-responsive">
+         <table  border="1" cellpadding="3" cellspacing="3" class ="table" style="text-align: center;">
+            <tbody>
+               <tr style="background-color: lightcyan; font-weight: bold;border-bottom: 1px solid">
+                  <strong>
+                     <td>From</td>
+                     <td>To</td>
+                     <td>Travel Cost</td>
+                     <td>Residence Cost</td>
+                     <td>Vacation Cost</td>
+                     <td>Save Trip</td>
+                  </strong>
+               </tr>
+               <tr>
+                  {% for destination,travel_costs,residence_costs,overall in others %}
+               </tr>
+               <tr>
+                  <td>{{starting}}</td>
+                  <td>{{destination}}</td>
+                  <td>{{travel_costs}} PKR</td>
+                  <td>{{residence_costs}} PKR</td>
+                  <td>{{overall}} PKR</td>
+                  <td><a style="color:black; text-decoration:none;" href="/save_{{destination}}_{{starting}}_{{checkin}}_{{checkout}}_{{people}}_{{travel_costs}}_{{residence_costs}}_{{overall}}">
+                     Save Trip</a></td>
+<!--                   <td> <form action = "" method = "post"><input type="submit">Submit</form></td>-->
+                  </strong>
+               </tr>
+               {% endfor %}
+            </tbody>
+            <tbody>
+         </table>
+      </div>
+   </div>
+</section>
+{% endblock %}

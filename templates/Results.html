@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="team-boxed">
+   <div class="container">
+      <div class="intro">
+         <h2 class="text-center">Travel Cost</h2>
+      </div>
+      <div class="table-responsive">
+         <table class="table ">
+            <tbody>
+               <tr>
+                  <td><strong>From</strong></td>
+                  <td>{{b}}</td>
+               </tr>
+               <tr>
+                  <td><strong>To</strong></td>
+                  <td>{{a}}</td>
+               </tr>
+               <tr>
+                  <td><strong>Average Distance by Air</strong></td>
+                  <td>{{e}} km</td>
+               </tr>
+               <tr>
+                  <td><strong>Average Distance by Road</strong></td>
+                  <td>{{d}} km</td>
+               </tr>
+               <tr>
+                  <td><strong>Cost (One Way - Road)</strong></td>
+                  <td>{{c}} PKR</td>
+               </tr>
+               <tr>
+                  <td><strong>Cost (Two Way - Road)</strong></td>
+                  <td>{{one}} PKR</td>
+               </tr>
+               </tr>
+            </tbody>
+            <tbody>
+         </table>
+      </div>
+   </div>
+</section>
+{% endblock %}
