@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'vacationplanner'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_3df587a05b9d4954b715741e98a289c8 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6ecf5ecce7d04f849f4443a15d381c25 }}
