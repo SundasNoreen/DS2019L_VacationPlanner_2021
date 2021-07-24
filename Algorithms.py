@@ -212,9 +212,9 @@ class Algorithms:
         no = Algorithms.Number_of_Days(checkout, checkin)
         Budget=int(Budget)
         if Budget<=15000:
-            Budget=Budget+4000
+            Budget=Budget+2000
         elif Budget>15000:
-            Budget=Budget+4000
+            Budget=Budget
         people=int(People)
         travel=int(Budget/2)
         distance = travel/(people*2*3)
