@@ -16,8 +16,8 @@ import Algorithms
 
 
 def database():
-    db = pymysql.connect(host='vacation-planner.mysql.database.azure.com', user='sundasnoreen@vacation-planner',
-                         password='Sundas1234', database='trips')
+    db = pymysql.connect(host='', user='',
+                         password='', database='trips')
     return db
 
 
@@ -243,7 +243,7 @@ def Send_Mail():
                 j = i[0]
                 if j == session['em']:
                     sender_email = 'noreply.vacationplanner@gmail.com'
-                    password = 'TermProjectSpring2021'
+                    password = ''
                     message = MIMEMultipart('alternative')
                     message['Subject'] = \
                         'Vacation Planner Account Password Reset'
@@ -669,7 +669,7 @@ def Save_Trip(a,b,c,d,e,f,g,h):
             conn.commit()
             sender_email = 'noreply.vacationplanner@gmail.com'
             receiver_email = session['email']
-            password = 'TermProjectSpring2021'
+            password = ''
             message = MIMEMultipart('alternative')
             message['Subject'] = 'Trip Saved'
             message['From'] = sender_email
