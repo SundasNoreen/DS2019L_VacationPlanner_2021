@@ -25,7 +25,7 @@ db = pymysql.connect(host='', user='', password='', database='trips')
 Run the Code, it will run on your machine.
  
 
-## Configuration Guide
+## Features
  Following Points can be accessed from Home Page: 
 - **Holiday Destinations:**
 The Best places to visit in Pakistan's top ten travel destinations.
