@@ -38,18 +38,9 @@ It displays trips that have been completed, that is, those whose end date has pa
 - **Travel Costs:**
 Allows you to compute the average cost of two cities, and it works over 150 Pakistani cities.
 - **Plan Trips:**
-It allows you to search for hotels within your ideal budget, plan a vacation to your desired location (the Vacation Planner will calculate both travel and hotel costs), and plan a vacation within your budget constraints (The Vacation Planner will show all the places that can be travelled to within that budget, the user can then select any trip of his choice).
+It allows you to search for hotels within your ideal budget, plan a vacation to your desired location (the Vacation Planner will calculate both travel and hotel costs), and plan a vacation within your budget constraints (The Vacation Planner will show all the places that can be travelled to within that budget, the user can then select any trip of his choice). Click on the **Save Trip** Button, your trip will get saved and you will also receive an **email**.
  <br><br>  
-### Once you've finished planning your trip, you must save it so you can have a record and can fetch details whenever you want.
-Click on the **Save Trip** Button, your trip will get saved and you will also receive an **email**.<br>
- <a></a>
- <br><br>
- 
- ### Since, you have an account on the Vacation Planner, you must have access to your profile. So, here it is.
- From Home Page, Drop Down in the Navigation Bar, Click **Profile**. The control will take you to the page shown in the below snapshot, from here you can change your password and permanently delete your account.
- <br>
-<a href="https://drive.google.com/uc?export=view&id=1YeY27xHW08ypStfstD7vTpN79KLVa2v4"><img src="https://drive.google.com/uc?export=view&id=1YeY27xHW08ypStfstD7vTpN79KLVa2v4" style="width: 400px; max-width: 100%; height: auto;" title="Click to Enlarge Picture" />
- <a></a> 
+
 
 
 
