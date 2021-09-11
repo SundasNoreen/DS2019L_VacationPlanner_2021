@@ -19,8 +19,8 @@ def FindResidence(budget):
     price=[]
     results=[]
     amount=[]
-    db = pymysql.connect(host='vacation-planner.mysql.database.azure.com', user='sundasnoreen@vacation-planner',
-                         password='Sundas1234', database='trips')
+    db = pymysql.connect(host='', user='',
+                         password='', database='trips')
     cursor=db.cursor()
     sql = "SELECT `location` FROM `Hotels`;"
     cursor.execute(sql)
@@ -60,8 +60,8 @@ class Algorithms:
     def Distance_and_Cost(Starting,Destination):
         Start = []
         End = []
-        db = pymysql.connect(host='vacation-planner.mysql.database.azure.com', user='sundasnoreen@vacation-planner',
-                             password='Sundas1234', database='trips')
+        db = pymysql.connect(host='', user='',
+                             password='', database='trips')
         cursor = db.cursor()
         sql = "SELECT * FROM `pk` WHERE `city`=%s;"
         cursor.execute(sql,Starting)
@@ -116,8 +116,8 @@ class Algorithms:
         else:
             hotel_rooms = (people-1) / 2
         price=[]
-        db = pymysql.connect(host='vacation-planner.mysql.database.azure.com', user='sundasnoreen@vacation-planner',
-                             password='Sundas1234', database='trips')
+        db = pymysql.connect(host='', user='',
+                             password='', database='trips')
         cursor = db.cursor()
         sql = "SELECT `price` FROM `Hotels` WHERE `location`=%s;"
         cursor.execute(sql, Destination)
@@ -149,8 +149,8 @@ class Algorithms:
     # Find Hotels within Budget.
 
     def FindHotelinBudget(Minimum,Maximum,Location):
-        db = pymysql.connect(host='vacation-planner.mysql.database.azure.com', user='sundasnoreen@vacation-planner',
-                             password='Sundas1234', database='trips')
+        db = pymysql.connect(host='', user='',
+                             password='', database='trips')
         cursor = db.cursor()
         picture=[]
         name=[]
@@ -177,8 +177,8 @@ class Algorithms:
     # Find Hotels Below Budget.
 
     def FindHotelbelow(Minimum,Maximum,Location):
-        db = pymysql.connect(host='vacation-planner.mysql.database.azure.com', user='sundasnoreen@vacation-planner',
-                             password='Sundas1234', database='trips')
+        db = pymysql.connect(host='', user='',
+                             password='', database='trips')
         cursor = db.cursor()
         picture=[]
         name=[]
