@@ -16,39 +16,16 @@ pip install -r requirements.txt
 
 For Database Connection...
 
-- Database in the above code is connected to cloud. So, you can skip this step as well. But if you want to view the internal structre, import 'trips.sql' in your local host mysql server.
-- Edit the following part of code to
+- In order to connect Database, you can either use cloud or local host. Simply, import 'trips.sql' in your mysql server.
+- Edit the following part of code according to your database.
 ```sh
-db = pymysql.connect(host='localhost', user='root', password='', database='trips')
+db = pymysql.connect(host='', user='', password='', database='trips')
 ```
 
 Run the Code, it will run on your machine.
  
 
 ## Configuration Guide
-It will be giving you step by step instructions to configure the project.
-
-### **For more details, you can watch [Video Demo.](https://drive.google.com/file/d/1AsEFCf_MDeWeW9MFxUA_JCIvTYkihUws/view?usp=sharing)**
-
-Project is available on [Link 1](https://vacationplanner.azurewebsites.net) and [Link 2.](https://planyourvacation.herokuapp.com)
-
-### Here is the **Main Page** that will be opened when you launch the project.
-The snapshot below is showing the points from where you can login or register. In the case, if you have forgotten your password you can reset it as well.
-<br>
-<a href="https://drive.google.com/uc?export=view&id=15lZPlQ375yifR1k_MPsPgnMIjxWWl-NA"><img src="https://drive.google.com/uc?export=view&id=15lZPlQ375yifR1k_MPsPgnMIjxWWl-NA" style="width: 100px; height: 100px;" title="Click to Enlarge Picture" />
-<a></a>
-<br><br>
- 
-### Following are the snapshots of Home Page, the annotations indicate the working and tasks of navigation, menus and buttons.
-<br>
-<a href="https://drive.google.com/uc?export=view&id=1lg2WCtm3bT1AIQ6mho3EvCDuW3xQ-KsH"><img src="https://drive.google.com/uc?export=view&id=1lg2WCtm3bT1AIQ6mho3EvCDuW3xQ-KsH" style="width: 200px; max-width: 100%; height: 100px;" title="Click to Enlarge Picture" />
- 
- <a></a>
-<a href="https://drive.google.com/uc?export=view&id=1RFYG4f5wNSBT2AO1ptZrmlK-Dv0oJGdD"><img src="https://drive.google.com/uc?export=view&id=1RFYG4f5wNSBT2AO1ptZrmlK-Dv0oJGdD" style="width: 400px; max-width: 100%; height: auto;" title="Click to Enlarge Picture" />
- <a></a>
- <a href="https://drive.google.com/uc?export=view&id=1PtFoDYagSAX4uQn-Sl2xnm9Jt5kB_0o_"><img src="https://drive.google.com/uc?export=view&id=1PtFoDYagSAX4uQn-Sl2xnm9Jt5kB_0o_" style="width: 400px; max-width: 100%; height: auto;" title="Click to Enlarge Picture" />
- <a></a>
- <br>
  Following Points can be accessed from Home Page: 
 - **Holiday Destinations:**
 The Best places to visit in Pakistan's top ten travel destinations.
@@ -62,11 +39,9 @@ It displays trips that have been completed, that is, those whose end date has pa
 Allows you to compute the average cost of two cities, and it works over 150 Pakistani cities.
 - **Plan Trips:**
 It allows you to search for hotels within your ideal budget, plan a vacation to your desired location (the Vacation Planner will calculate both travel and hotel costs), and plan a vacation within your budget constraints (The Vacation Planner will show all the places that can be travelled to within that budget, the user can then select any trip of his choice).
- <br><br>
-  
+ <br><br>  
 ### Once you've finished planning your trip, you must save it so you can have a record and can fetch details whenever you want.
 Click on the **Save Trip** Button, your trip will get saved and you will also receive an **email**.<br>
-<a href="https://drive.google.com/uc?export=view&id=1M6JTINAyowbPQHXZuP8E5wY4jumxXjkk"><img src="https://drive.google.com/uc?export=view&id=1M6JTINAyowbPQHXZuP8E5wY4jumxXjkk" style="width: 400px; max-width: 100%; height: auto;" title="Click to Enlarge Picture" />
  <a></a>
  <br><br>
  
